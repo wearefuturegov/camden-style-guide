@@ -1,20 +1,20 @@
 FROM ruby:2.7.2-buster
 
-#RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-#RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-#RUN apt-get update -qq && apt-get remove cmdtest && apt-get install -y nodejs postgresql-client yarn
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN apt-get update -qq && apt-get remove cmdtest && apt-get install -y nodejs postgresql-client yarn
 RUN gem install bundler
 WORKDIR /app
 COPY lib/camden/style_guide/version.rb /app/lib/camden/style_guide/version.rb
 COPY camden-style_guide.gemspec /app/camden-style_guide.gemspec
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
-#COPY package.json /app/package.json
-#COPY yarn.lock /app/yarn.lock
+COPY package.json /app/package.json
+COPY yarn.lock /app/yarn.lock
 
 ENV RAILS_ENV development
 RUN bundle
-#RUN yarn install --check-files
+RUN yarn install --check-files
 COPY . /app
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
