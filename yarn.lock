@@ -3664,6 +3664,13 @@ interpret@^1.4.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
+inuitcss@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/inuitcss/-/inuitcss-6.0.0.tgz#164a2557736a29a9874f99c6165174d996ea6a53"
+  integrity sha512-FnyXNy2WSzSli4INmgtrsFwkzDljabK583AoC7KZutB6m8bVrAzjZ7jadro4N4RcqQRpMlW88NwgHIWgD7CDrg==
+  dependencies:
+    sass-mq "^3.3.2"
+
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -6311,6 +6318,11 @@ sass-loader@^10.1.0:
     neo-async "^2.6.2"
     schema-utils "^3.0.0"
     semver "^7.3.2"
+
+sass-mq@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/sass-mq/-/sass-mq-3.3.2.tgz#3472e04c31a432bcd55b3b604edc72ae9a4def1a"
+  integrity sha1-NHLgTDGkMrzVWztgTtxyrppN7xo=
 
 sass@^1.30.0:
   version "1.30.0"
