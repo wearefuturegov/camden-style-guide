@@ -1,0 +1,18 @@
+$palette: (
+    blue: #156BEC,
+    white: #FFF,
+);
+
+@each $name, $colour in $palette {
+    .c-#{$name} {
+        color: $colour;
+    }
+
+    .bg-#{$name} {
+        background: $colour;
+    }
+
+    .b-#{$name} {
+        border-colour: $colour;
+    }
+}
