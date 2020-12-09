@@ -174,7 +174,7 @@ $btn-ghost-border-width: 2px;
 .c-button {
    padding: 8px 18px;
     &--primary {
-        @extend .bg-blue;
+        @extend .bg-primary;
         @extend .c-white;
     }
 

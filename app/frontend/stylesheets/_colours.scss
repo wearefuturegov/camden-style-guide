@@ -1,18 +1,30 @@
+@use 'sass:map';
+
 $palette: (
     blue: #156BEC,
+    green: #006600,
+    gray: #999,
     white: #FFF,
 );
 
+$primary-colour: map.get($palette, blue) !default;
+$secondary-colour: map.get($palette, green) !default;
+$tertiary-colour: map.get($palette, gray) !default;
+
+$palette: map.set($palette, primary, $primary-colour);
+$palette: map.set($palette, secondary, $secondary-colour);
+$palette: map.set($palette, tertiary, $tertiary-colour);
+
 @each $name, $colour in $palette {
-    .c-#{$name} {
+    .c-#{""+$name} {
         color: $colour;
     }
 
-    .bg-#{$name} {
+    .bg-#{""+$name} {
         background: $colour;
     }
 
-    .b-#{$name} {
+    .b-#{""+$name} {
         border-colour: $colour;
     }
 }
