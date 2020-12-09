@@ -1,8 +1,13 @@
 @use 'sass:map';
 
+@function palette($name) {
+    @return map-get($palette, $name);
+}
+
 $palette: (
     blue: #156BEC,
     green: #006600,
+    light-gray: #CCC,
     gray: #999,
     white: #FFF,
 );
