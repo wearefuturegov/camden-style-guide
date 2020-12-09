@@ -2,6 +2,32 @@
 //   #CONFIG
 //   ======================================================================== */
 
+$inuit-spacing-directions: (
+    null: null,
+    't': '-top',
+    'r': '-right',
+    'b': '-bottom',
+    'l': '-left',
+) !default;
+
+$inuit-spacing-properties: (
+    'p': 'padding',
+    'm': 'margin',
+) !default;
+
+$inuit-spacing-sizes: (
+    null: 24px,
+    '--': 6px,
+    '-': 12px,
+\+: 48px,
+\+\+: 96px,
+'0': 0
+);
+
+$inuit-widths-delimiter: '-of-';
+
+$inuit-widths-breakpoint-separator: '-';
+
 // A map of global config settings. Define any project-level configuration,
 // feature switches, etc. in here.
 
