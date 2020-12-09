@@ -1,3 +1,5 @@
+require 'webpacker'
+
 module Camden
   module StyleGuide
     class Engine < ::Rails::Engine
