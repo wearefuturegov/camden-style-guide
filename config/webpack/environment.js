@@ -9,5 +9,17 @@ const webpack = require("webpack");
 //     "window.$": "jquery"
 //   })
 // );
+environment.loaders.append("scss", {
+  test: /\.scss$/,
+  use: [
+    {
+      loader: "sass-loader",
+      options: {
+        sourceMap: true,
+        implementation: require("sass")
+      }
+    }
+  ]
+});
 
 module.exports = environment;

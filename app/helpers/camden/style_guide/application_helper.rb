@@ -1,4 +1,3 @@
-require 'webpacker'
 require 'webpacker/helper'
 
 module Camden

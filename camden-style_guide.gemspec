@@ -5,7 +5,7 @@ require "camden/style_guide/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "camden-style_guide"
+  spec.name        = "camden_style_guide"
   spec.version     = Camden::StyleGuide::VERSION
   spec.authors     = ["Dan Garland"]
   spec.email       = ["dan@dangarland.co.uk"]

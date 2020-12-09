@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    camden-style_guide (0.1.0)
+    camden_style_guide (0.1.0)
       rails (~> 6.0.2, >= 6.0.2.2)
       webpacker (~> 5)
 
@@ -144,7 +144,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  camden-style_guide!
+  camden_style_guide!
 
 BUNDLED WITH
    2.1.4

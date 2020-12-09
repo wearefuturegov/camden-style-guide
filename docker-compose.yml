@@ -1,11 +1,25 @@
 version: '3'
 services:
-  app:
+  app: &app
     build: 
       context: .
       dockerfile: Dockerfile.dev
+    environment:
+      - WEBPACKER_DEV_SERVER_HOST=webpack
     command: bash -c "rm -f tmp/pids/server.pif && bundle exec rails s -p 4000 -b '0.0.0.0'"
     volumes:
       - .:/app
     ports:
       - "4000:4000"
+    tty: true
+    stdin_open: true
+
+  webpack: 
+    <<: *app
+    environment:
+      - NODE_ENV=development
+      - RAILS_ENV=development
+      - WEBPACKER_DEV_SERVER_HOST=0.0.0.0
+    command: ./bin/webpack-dev-server
+    ports:
+      - 127.0.0.1:3035:3035
