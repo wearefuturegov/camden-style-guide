@@ -36,59 +36,60 @@
    ========================================================================== */
 
 .c-btn--primary {
-    @extend .bg-primary;
+  background-color: palette(primary);
+  color: #fff;
+  border: 1px solid darken( palette(primary), 15);
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none; /* [4] */
-    color: #fff;
   }
 
   &:hover,
   &:focus {
-    background-color: #3774a2;
+      background-color: darken(palette(primary), 10);
   }
 
 }
 
 
 .c-btn--secondary {
-  @extend .bg-secondary;
+  background-color: palette(secondary);
+  color: #fff;
+  border: 1px solid darken( palette(secondary), 15);
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: #fff;
   }
 
   &:hover,
   &:focus {
-    background-color: #1d2733;
+    background-color: darken(palette(secondary), 10);
   }
 
 }
 
 
 .c-btn--tertiary {
-    @extend .bg-tertiary;
-
-  color: #4a8ec2;
+  background-color: palette(tertiary);
+  color: #fff;
+  border: 1px solid darken( palette(tertiary), 15);
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: #4a8ec2;
   }
 
   &:hover,
   &:focus {
-    color: #3774a2;
+    background-color: darken(palette(tertiary), 10);
   }
 
 }
@@ -142,7 +143,6 @@ $btn-ghost-border-width: 2px;
 
   &.c-btn--primary {
       color: palette(white);
-      background-color: palette(primary);
 
     &:hover,
     &:focus {
@@ -153,6 +153,7 @@ $btn-ghost-border-width: 2px;
 
   &.c-btn--secondary {
     color: #2f4054;
+    background-color: palette(secondary);
 
     &:hover,
     &:focus {
@@ -163,6 +164,7 @@ $btn-ghost-border-width: 2px;
 
   &.c-btn--tertiary {
     color: #fff;
+    background-color: palette(tertiary);
 
     &:hover,
     &:focus {
