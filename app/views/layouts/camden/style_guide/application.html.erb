@@ -8,21 +8,23 @@
   <%= stylesheet_pack_tag "meta", media: "all" %>
 </head>
 <body>
-    <header>
+    <header class="bg-black c-white u-p">
         <h1>Camden Style Guide</h1>
     </header>
 
     <div class="o-layout bg-light-gray">
         <aside class="o-layout__item u-1-of-1 u-1-of-4-desktop">
+            <div class="u-p">
             <h2>Style Index</h2>
             <ul>
                 <li><a href="#forms">Forms</a></li>
                 <li><a href="#layout">Layout</a></li>
                 <li><a href="#colours">Colours</a></li>
             </ul>
+            </div>
         </aside>
 
-        <main class="o-layout__item u-1-of-1 u-3-of-4-desktop bg-white">
+        <main class="o-layout__item u-1-of-1 u-3-of-4-desktop bg-white u-pt">
             <%= yield %>
         </main>
     </div>
