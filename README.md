@@ -36,6 +36,16 @@ $ bundle
 
 - In theory that should work!
 
+## Usage in your JavaScript app as an npm module
+
+TODO - need to add build scripts to package.json
+
+1. `yarn dist`
+2. `yarn release`
+3. `yarn add camden-style-guide`
+
+In the interim we ought to be able to just use whatever rails webpacker is spitting out in the `public/packs` folder.
+
 ## Usage for development of the Guide itself
 
 This ought to start a server so that you can preview the guide at http://localhost:4000/style_guide
