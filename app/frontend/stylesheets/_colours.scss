@@ -33,6 +33,6 @@ $palette: map.set($palette, tertiary, $tertiary-colour);
     }
 
     .b-#{""+$name} {
-        border-colour: $colour;
+        border-color: $colour;
     }
 }
