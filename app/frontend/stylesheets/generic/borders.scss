@@ -1,14 +1,28 @@
-.b-sm {
-    border-style: solid;
-    border-width: 1px;
-}
+$sizes: (
+  sm: 1px,
+  md: 2px,
+  lg: 3px
+);
 
-.b-md {
-    border-style: solid;
-    border-width: 2px;
-}
+$dimensions: (
+    top: t,
+    right: r,
+    left: l,
+    bottom: b
+);
 
-.b-lg {
-    border-style: solid;
-    border-width: 3px;
+@each $label, $size in $sizes {
+    .b-#{$label} {
+        border: {
+            style: solid;
+            width: $size;
+        }
+
+        @each $dimension, $short in $dimensions {
+            &__#{$short} {
+                border-#{$dimension}-style: solid;
+                border-#{$dimension}-width: $size;
+            }
+        }
+    }
 }
