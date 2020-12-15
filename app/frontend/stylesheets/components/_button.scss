@@ -23,9 +23,10 @@
   text-align: center; /* [4] */
   margin: 0; /* [4] */
   cursor: pointer; /* [5] */
-  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
   transition: $global-transition;
   border-radius: $global-radius;
+  border: 0;
 }
 
 
@@ -38,7 +39,6 @@
 .c-btn--primary {
   background-color: palette(primary);
   color: #fff;
-  border: 1px solid darken( palette(primary), 15);
 
   &,
   &:hover,
@@ -58,7 +58,6 @@
 .c-btn--secondary {
   background-color: palette(secondary);
   color: #fff;
-  border: 1px solid darken( palette(secondary), 15);
 
   &,
   &:hover,
@@ -78,7 +77,7 @@
 .c-btn--tertiary {
   background-color: palette(tertiary);
   color: #fff;
-  border: 1px solid darken( palette(tertiary), 15);
+  border: 0;
 
   &,
   &:hover,

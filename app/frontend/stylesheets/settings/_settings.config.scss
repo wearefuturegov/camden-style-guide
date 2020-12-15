@@ -2,6 +2,13 @@
 //   #CONFIG
 //   ======================================================================== */
 
+$inuit-global-baseline:     8px;
+$inuit-global-spacing-unit-factor-tiny:   1 !default;   // 8px
+$inuit-global-spacing-unit-factor-small:  2 !default;   // 16px
+$inuit-global-spacing-unit-factor:        3 !default;   // 24px
+$inuit-global-spacing-unit-factor-large:  4 !default;   // 32px
+$inuit-global-spacing-unit-factor-huge:   5 !default;   // 40px
+
 $inuit-fractions: 1 2 3 4 5 10 12;
 
 $inuit-spacing-directions: (
@@ -17,14 +24,7 @@ $inuit-spacing-properties: (
     'm': 'margin',
 ) !default;
 
-$inuit-spacing-sizes: (
-    null: 24px,
-    '--': 6px,
-    '-': 12px,
-\+: 48px,
-\+\+: 96px,
-'0': 0
-);
+
 
 $inuit-widths-delimiter: '-of-';
 
@@ -38,6 +38,7 @@ $inuit-config: (
   healthcheck: false,
   debug: true,
 );
+
 
 // You can access data in this map using the following function:
 //
