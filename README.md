@@ -16,8 +16,6 @@ This is a Ruby gem containing a Rails engine and a Dockerfile for development pu
 
 ## Usage within your Rails app
 
-TODO - Test this out on Beacon in a branch to see if its working
-
 - Add the gem to the Gemfile (TODO - publish somewhere)
 
 ```
@@ -30,17 +28,22 @@ $ bundle
 ```
 
 - Import the styles in your layout
+
 ```
-<%= stylesheet_pack_tag 'style_guide', :media => "all %>
+<%= Camden::StyleGuide::TagHelper.style_guide_css_pack_tag :media => "all" %>
 ```
 
-- In theory that should work!
+- You can also view the docs by visiting http://localhost:3000/style-guide
+
+- For production usage you can run `rake camden_style_guide:webpacker:compile` to create the assets which will then be served statically.
 
 ## Usage for development of the Guide itself
 
 This ought to start a server so that you can preview the guide at http://localhost:4000/style_guide
 
 `docker-compose up`
+
+This brings up a dev server running on 3056 that shows live updates as you make them (js) or refresh (scss).
 
 ## Contributing
 
