@@ -22,4 +22,4 @@ services:
       - WEBPACKER_DEV_SERVER_HOST=0.0.0.0
     command: ./bin/webpack-dev-server
     ports:
-      - 127.0.0.1:3035:3035
+      - 127.0.0.1:3036:3036
