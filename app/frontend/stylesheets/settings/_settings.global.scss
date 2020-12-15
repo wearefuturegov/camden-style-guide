@@ -7,7 +7,13 @@
 
 
 
-// Standardise some UI treatments.
-
 $global-radius: 3px !default;
 $global-transition: all 300ms ease-in-out !default;
+$inuit-spacing-sizes: (
+    null: $inuit-global-spacing-unit,
+    "--": $inuit-global-spacing-unit-tiny,
+    "-": $inuit-global-spacing-unit-small,
+    \+: $inuit-global-spacing-unit-large,
+    \+\+: $inuit-global-spacing-unit-huge,
+    "0": 0
+);
