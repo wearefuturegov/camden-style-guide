@@ -78,6 +78,7 @@
 @import "settings/_settings.config";
 @import "inuitcss/settings/settings.core";
 @import "settings/_settings.global";
+@import "colours";
 
 
 
@@ -136,7 +137,7 @@
 // COMPONENTS
 //
 // Build and include your project’s UI components here.
-@import "inuitcss/components/example.components.buttons";
+@import "components/_button";
 
 
 

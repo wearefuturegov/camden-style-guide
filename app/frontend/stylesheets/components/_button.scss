@@ -141,11 +141,12 @@ $btn-ghost-border-width: 2px;
   }
 
   &.c-btn--primary {
-    color: map.get($palette, primary);
+      color: palette(white);
+      background-color: palette(primary);
 
     &:hover,
     &:focus {
-      color: #3774a2;
+      color: darken(palette(primary), 10);
     }
 
   }
@@ -167,7 +168,5 @@ $btn-ghost-border-width: 2px;
     &:focus {
       color: #fff;
     }
-
   }
-
 }
