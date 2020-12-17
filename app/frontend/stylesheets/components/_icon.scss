@@ -1,6 +1,6 @@
 .c-icon {
     display: inline-block;
-    line-height: $inuit-global-line-height / $inuit-global-font-size; 
+    line-height: #{$inuit-global-line-height / $inuit-global-font-size}rem;
     text-align: center;
     mask: {
       repeat: no-repeat;
