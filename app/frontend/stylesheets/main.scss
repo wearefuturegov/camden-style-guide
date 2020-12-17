@@ -101,6 +101,7 @@
 @import "inuitcss/generic/generic.shared";
 @import "generic/fonts";
 @import "generic/borders";
+@import "generic/typography";
 
 
 
@@ -147,6 +148,7 @@
 
 // UTILITIES
 @import "inuitcss/utilities/utilities.clearfix";
+@import "utilities/layout";
 
 // Be aware that enabling offsets produces a large chunk of classes which might
 // bloat your CSS, depending of the amount of breakpoints you defined.
