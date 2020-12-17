@@ -43,7 +43,7 @@ def enhance_assets_precompile
   # yarn:install was added in Rails 5.1
   deps = yarn_install_available? ? [] : ["camden_style_guide:webpacker:yarn_install"]
   Rake::Task["assets:precompile"].enhance(deps) do
-    Rake::Task["my_engine:webpacker:compile"].invoke
+    Rake::Task["camden_style_guide:webpacker:compile"].invoke
   end
 end
 
@@ -54,6 +54,6 @@ unless skip_webpacker_precompile
   if Rake::Task.task_defined?("assets:precompile")
     enhance_assets_precompile
   else
-    Rake::Task.define_task("assets:precompile" => "my_engine:webpacker:compile")
+    Rake::Task.define_task("assets:precompile" => "camden_style_guide:webpacker:compile")
   end
 end
