@@ -1,6 +1,6 @@
 <section id="forms" class="u-mb bg-white u-p u-pt++">
     <h3>Forms</h3>
-    <div id="button">
+    <div id="button" class="u-mb">
         <h5>Primary</h5>
         <button class="c-btn c-btn--primary u-mb-">Click Me</button>
 
@@ -9,6 +9,59 @@
 
         <h5>Tertiary</h5>
         <button class="c-btn c-btn--tertiary">Click Me</button>
+    </div>
+
+    <div id="inputs">
+        <h5>Inputs</h5>
+        <p>Elements styled within form element with .camden-form class</p>
+
+        <form class="camden-form">
+            <h6>Input box</h6>
+            <input type="text" placeholder="Type in here" class="u-mb" />
+            <h6>Search box</h6>
+            <div class="bg-light-gray u-p u-mb">
+              <input type="search" placeholder="Search" />
+            </div>
+
+            <h6>Checkboxes</h6>
+
+            <fieldset class="u-mb">
+                <input id="checkbox-id" type="checkbox" />
+                <label for="checkbox-id">
+                    Checkbox
+                </label>
+            </fieldset>
+
+            <h6>Radio</h6>
+
+            <fieldset class="u-mb">
+                <input id="radio-1" name="fruit" value="apple" type="radio" />
+                <label for="radio-1">Apples</label>
+            </fieldset>
+
+            <fieldset class="u-mb">
+                <input id="radio-2" name="fruit" value="pears" type="radio" />
+                <label for="radio-2">Pears</label>
+            </fieldset>
+
+            <fieldset class="u-mb">
+                <input id="radio-3" name="fruit" vaule="stairs" type="radio" />
+                <label for="radio-3">Stairs</label>
+            </fieldset>
+
+            <h6>Select / Dropdowns</h6>
+            
+            <fieldset class="u-mb">
+                <div class="select-container">
+                    <select id="rhymes">
+                        <option>Pork Pies</option>
+                        <option>Eyes</option>
+                        <option>Butchers Hook</option>
+                        <option>Look</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
     </div>
 </section>
 
@@ -124,6 +177,9 @@
     <p><i class="c-icon c-icon--sort-up"></i> Sort Up</p>
     <p><i class="bg-gray c-icon c-icon--sort"></i> Sort</p>
     <p><i class="bg-black c-icon c-icon--chevron-right"></i> Chevron Right</p>
+    <p><i class="bg-black c-icon c-icon--chevron-left"></i> Chevron Left</p>
+    <p><i class="bg-black c-icon c-icon--chevron-up"></i> Chevron Up</p>
+    <p><i class="bg-black c-icon c-icon--chevron-down"></i> Chevron Down</p>
     <p><i class="bg-black c-icon c-icon--dots"></i> Dots</p>
     <p><i class="bg-black c-icon c-icon--search"></i> Search</p>
     <p><i class="bg-black c-icon c-icon--file"></i> File</p>
