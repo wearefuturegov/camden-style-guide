@@ -13,14 +13,33 @@
 
     <div id="inputs">
         <h5>Inputs</h5>
-        <input type="text" placeholder="Type in here" class="u-mb" />
+        <p>Elements styled within form element with .camden-form class</p>
 
-        <fieldset>
-            <input id="checkbox-id" type="checkbox" />
-            <label for="checkbox-id">
-                Checkbox
-            </label>
-        </fieldset>
+        <form class="camden-form">
+            <input type="text" placeholder="Type in here" class="u-mb" />
+
+            <fieldset class="u-mb">
+                <input id="checkbox-id" type="checkbox" />
+                <label for="checkbox-id">
+                    Checkbox
+                </label>
+            </fieldset>
+
+            <fieldset class="u-mb">
+                <input id="radio-1" name="fruit" value="apple" type="radio" />
+                <label for="radio-1">Apples</label>
+            </fieldset>
+
+            <fieldset class="u-mb">
+                <input id="radio-2" name="fruit" value="pears" type="radio" />
+                <label for="radio-2">Pears</label>
+            </fieldset>
+
+            <fieldset class="u-mb">
+                <input id="radio-3" name="fruit" vaule="stairs" type="radio" />
+                <label for="radio-3">Stairs</label>
+            </fieldset>
+        </form>
     </div>
 </section>
 
