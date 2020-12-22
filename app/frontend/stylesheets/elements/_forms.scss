@@ -90,4 +90,29 @@
         width: $inuit-global-spacing-unit-small;
         height: $inuit-global-spacing-unit-small;
     }
+
+    .select-container {
+        position: relative;
+        select {
+          -webkit-appearance: none;
+          appearance: none;
+          background: palette(off-white);
+          border: 0;
+          padding: $inuit-global-spacing-unit-small;
+          width: 100%;
+        }
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: $inuit-global-spacing-unit-small;
+          right: $inuit-global-spacing-unit-small;
+          height: $inuit-global-spacing-unit;
+          width: $inuit-global-spacing-unit-small;
+          background: palette(black);
+          mask-repeat: no-repeat;
+          mask-position: center;
+          @extend .c-icon--chevron-down;
+        }
+    }
 }
