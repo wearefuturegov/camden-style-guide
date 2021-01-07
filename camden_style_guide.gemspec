@@ -25,6 +25,6 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  spec.add_dependency "rails", "~> 6.0.2", ">= 6.0.2.2"
-  spec.add_dependency "webpacker", "~> 4"
+  spec.add_dependency "rails", "~> 6.0.2", ">= 6.0.3.4"
+  spec.add_dependency "webpacker", "~> 5"
 end
