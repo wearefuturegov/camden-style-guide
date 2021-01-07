@@ -2,7 +2,7 @@
   "name": "camden-style-guide",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "4.2.2",
+    "@rails/webpacker": "6.0.0-pre.1",
     "datatables.net": "^1.10.20",
     "datatables.net-dt": "^1.10.20",
     "flatpickr": "^4.6.3",
@@ -15,6 +15,6 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.1"
   }
 }
