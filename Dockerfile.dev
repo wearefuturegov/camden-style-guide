@@ -1,9 +1,9 @@
-FROM ruby:2.7.2-buster
+FROM ruby:2.7.5
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get update -qq && apt-get remove cmdtest && apt-get install -y nodejs postgresql-client yarn
-RUN gem install bundler -v 2.1.4
+RUN gem install bundler -v 2.3.11
 WORKDIR /app
 COPY lib/camden/style_guide/version.rb /app/lib/camden/style_guide/version.rb
 COPY camden_style_guide.gemspec /app/camden_style_guide.gemspec
