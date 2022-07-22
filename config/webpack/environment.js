@@ -1,3 +1,4 @@
+// VERY helpful notes here: https://github.com/rails/webpacker/blob/a84a4bb6b385ae17dd775a6034a0b159b88c6ea9/docs/webpack.md#configuration
 const { environment } = require("@rails/webpacker");
 
 const webpack = require("webpack");

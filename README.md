@@ -57,3 +57,7 @@ This brings up a dev server running on 3056 that shows live updates as you make 
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Troubleshooting
+
+If your changing package and gemfile locally you'll likely need to rebuild your images - run `docker-compose build` to get new files into the image
