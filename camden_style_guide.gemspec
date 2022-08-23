@@ -7,8 +7,8 @@ require "camden/style_guide/version"
 Gem::Specification.new do |spec|
   spec.name        = "camden_style_guide"
   spec.version     = Camden::StyleGuide::VERSION
-  spec.authors     = ["Dan Garland"]
-  spec.email       = ["dan@dangarland.co.uk"]
+  spec.authors     = ["TPX Impact"]
+  spec.email       = ["fg-support@tpximpact.com"]
   spec.homepage    = "https://github.com/wearefuturegov/camden-style-guide"
   spec.summary     = "Camden Style Guide"
   spec.description = "A Rails Engine that encapsulates the generic style guide for Camden based apps"
@@ -26,5 +26,5 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   spec.add_dependency "rails", "~> 6.0.2", ">= 6.0.2.2"
-  spec.add_dependency "webpacker", "~> 4"
+  spec.add_dependency "webpacker", "~> 5"
 end

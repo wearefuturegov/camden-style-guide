@@ -2,8 +2,10 @@ FROM ruby:2.7.5
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-RUN apt-get update -qq && apt-get remove cmdtest && apt-get install -y nodejs postgresql-client yarn python
-RUN gem install bundler -v 2.3.11
+RUN apt-get update -qq && apt-get remove cmdtest && apt-get install -y postgresql-client yarn
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt-get install -y nodejs
+RUN gem install bundler -v 2.3.17
 WORKDIR /app
 COPY lib/camden/style_guide/version.rb /app/lib/camden/style_guide/version.rb
 COPY camden_style_guide.gemspec /app/camden_style_guide.gemspec
